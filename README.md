@@ -2,34 +2,7 @@
 
 # ocp8
 
-BileMo is a BTB smartphone provider. When you have a client account with us, you can access the list of smartphones we offer through our API. You also have the possibility to manage your customers directly from our API. 
-Here is how to use it.
-
-# Client usage
-
-## Read the API documentation
-To know all about the request entries, the parameters and make tests, go to the documentation by accessing : /api/doc
-
-## Get a Bearer Token
-To access the API, you need to be identified. To do this, you must include an access token in each of the requests you make.
-
-To generate a bearer token, send a request with your login details in JSON format to /api/login_check
-
-Example of request body (JSON format):  
-{  
-&nbsp;&nbsp;&nbsp;&nbsp;"username":"your_login",  
-&nbsp;&nbsp;&nbsp;&nbsp;"password":"your_password"  
-}  
-
-This will return your bearer token.
-
-## Make a request
-Some examples :
-- Get the list of the available products : /api/product (GET)
-- Get the detail of a product : /api/product/{product_id} (GET)
-
-This will return a JSON response.
-Don't forget to include the bearer token in the header of your request.
+ToDo & Co is an application to manage your daily tasks.
 
 # Developper installation
 
