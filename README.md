@@ -1,6 +1,6 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/1faf2041e6124da599eb1889426c9902)](https://www.codacy.com/gh/thaydan/ocp7/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=thaydan/ocp7&amp;utm_campaign=Badge_Grade)
 
-# ocp8
+# ocp7
 
 BileMo is a BTB smartphone provider. When you have a client account with us, you can access the list of smartphones we offer through our API. You also have the possibility to manage your customers directly from our API. 
 Here is how to use it.
@@ -35,7 +35,9 @@ Don't forget to include the bearer token in the header of your request.
 
 1. Copy the repository
 2. Install dependencies with "composer install"
-3. Generate keypair with : "php bin/console lexik:jwt:generate-keypair"
-4. Create database : "php bin/console doctrine:database:create"
-5. Update database schema : "php bin/console doctrine:database:update --force"
-6. Load fixtures : "php bin/console doctrine:fixtures:load"
+3. Create database : "php bin/console doctrine:database:create"
+4. Update database schema : "php bin/console doctrine:database:update --force"
+5. Load fixtures : "php bin/console doctrine:fixtures:load"
+
+**Admin account** : email : admin@admin.com / password : admin  
+**User account** : email : user@user.com / password : user  
