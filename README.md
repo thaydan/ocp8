@@ -4,7 +4,7 @@
 
 ToDo & Co is an application to manage your daily tasks.
 
-# Developper installation
+## Developper installation
 
 (mettre version php + mysql)
 expliquer pour .env
