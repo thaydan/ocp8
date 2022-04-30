@@ -23,5 +23,6 @@ expliquer pour .env
 To install demo data you need to load the fixtures with this command : "php bin/console doctrine:fixtures:load"
 
 **Demo accounts**  
+  
 Admin : email : admin@admin.com / password : admin  
 User : email : user@user.com / password : user  
