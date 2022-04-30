@@ -20,11 +20,11 @@ expliquer pour .env
 4. Update database schema : "php bin/console doctrine:database:update --force"
 
 ## Fixtures
-To install demo data you need to load the fixtures with this command : "php bin/console doctrine:fixtures:load"
+To install demo data you need to load the fixtures with this command : php bin/console doctrine:fixtures:load
 
 **Demo accounts included**  
   
-Account | Email | Password
+&nbsp; | Email | Password
 --- | --- | ---
-Admin | *admin@admin.com* | *admin*  
-User | *user@user.com* | *user*  
+Admin | `admin@admin.com` | `admin`  
+User | `user@user.com` | `user`  
