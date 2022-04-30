@@ -26,5 +26,5 @@ To install demo data you need to load the fixtures with this command : php bin/c
   
 Account | Email | Password
 --- | --- | ---
-Admin | `*admin@admin.com*` | *admin*  
-User | *user@user.com* | *user*  
+Admin | `admin@admin.com` | `admin`  
+User | `user@user.com` | `user`  
