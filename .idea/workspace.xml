@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c49c9d40-904e-4ce3-beab-753e0b3b5004" name="Changes" comment="enhancement">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Functional/AbstractWebTestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/AbstractWebTestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Functional/Controller/DefaultControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Controller/DefaultControllerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Functional/Controller/SecurityControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Controller/SecurityControllerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/RefererTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/RefererTest.php" afterDir="false" />
-    </list>
+    <list default="true" id="c49c9d40-904e-4ce3-beab-753e0b3b5004" name="Changes" comment="enhancement" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -386,7 +380,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651329489699</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="enhancement">
+      <created>1651330486432</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1651330486432</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
