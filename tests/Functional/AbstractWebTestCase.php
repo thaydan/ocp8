@@ -29,7 +29,7 @@ abstract class AbstractWebTestCase extends WebTestCase
             $this->loginAs($loginAs);
         }
 
-        $crawler = $this->client->request('GET', $this->router->generate($routeName));
+        $this->client->request('GET', $this->router->generate($routeName));
 
         if ($expected) {
             $this->assertEquals(200, $this->client->getResponse()->getStatusCode());

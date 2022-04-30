@@ -15,20 +15,17 @@ class RefererTest extends AbstractWebTestCase
 
     public function testSetAndGet(): void
     {
-        $user = $this->loginAs('user@user.com');
+        $this->loginAs('user@user.com');
 
         $url1 = $this->router->generate('homepage');
         $url2 = $this->router->generate('task_list');
 
-        $crawler1 = $this->client->request('GET', $url1);
-        $crawler2 = $this->client->request('GET', $url2);
+        $this->client->request('GET', $url1);
+        $this->client->request('GET', $url2);
 
         $this->referer->set();
         $result = $this->referer->get();
 
         $this->assertEquals($url1, $result);
-
-        $this->assertResponseIsSuccessful();
-        $this->assertSelectorTextContains('h1', 'Hello World');
     }
 }

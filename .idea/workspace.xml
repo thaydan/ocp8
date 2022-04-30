@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c49c9d40-904e-4ce3-beab-753e0b3b5004" name="Changes" comment="issue-7">
+    <list default="true" id="c49c9d40-904e-4ce3-beab-753e0b3b5004" name="Changes" comment="enhancement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/AbstractWebTestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/AbstractWebTestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Controller/DefaultControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Controller/DefaultControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Controller/SecurityControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Controller/SecurityControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/RefererTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/RefererTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -375,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651327325323</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="enhancement">
+      <created>1651329489699</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1651329489699</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,7 +406,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="issue-6" />
     <MESSAGE value="issue-7" />
-    <option name="LAST_COMMIT_MESSAGE" value="issue-7" />
+    <MESSAGE value="enhancement" />
+    <option name="LAST_COMMIT_MESSAGE" value="enhancement" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

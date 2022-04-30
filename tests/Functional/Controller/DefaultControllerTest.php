@@ -19,9 +19,8 @@ class DefaultControllerTest extends AbstractWebTestCase
 
     protected function testIndex(int $expectedCode)
     {
-        $crawler = $this->client->request('GET', '/');
+        $this->client->request('GET', '/');
 
         $this->assertEquals($expectedCode, $this->client->getResponse()->getStatusCode());
-        //$this->assertStringContainsString('Welcome to Symfony', $crawler->filter('#container h1')->text());
     }
 }

@@ -17,10 +17,8 @@ class SecurityControllerTest extends AbstractWebTestCase
 
     public function testLoginPage(): void
     {
-        $crawler = $this->client->request('GET', '/login');
-
+        $this->client->request('GET', '/login');
         $this->assertResponseIsSuccessful();
-        //$this->assertSelectorTextContains('h1', 'Hello World');
     }
 
     public function testLogin()
