@@ -4,7 +4,11 @@
 
 ToDo & Co is an application to manage your daily tasks.
 
-## Developper installation
+## Requierements
+- PHP 8.0.17
+- MariaDB 10.5.15
+
+## Installation
 
 (mettre version php + mysql)
 expliquer pour .env
@@ -14,7 +18,10 @@ expliquer pour .env
 2. Install dependencies with "composer install"
 3. Create database : "php bin/console doctrine:database:create"
 4. Update database schema : "php bin/console doctrine:database:update --force"
-5. Load fixtures : "php bin/console doctrine:fixtures:load"
 
-**Admin account** : email : admin@admin.com / password : admin  
-**User account** : email : user@user.com / password : user  
+## Fixtures
+To install demo data you need to load the fixtures with this command : "php bin/console doctrine:fixtures:load"
+
+**Demo accounts included**
+Admin account : email : admin@admin.com / password : admin  
+User account : email : user@user.com / password : user  
