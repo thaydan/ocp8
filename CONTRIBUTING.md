@@ -16,13 +16,20 @@
 ## tree
 
     .
-    ├── config                      # Compiled files (alternatively `dist`)
-    ├── public                      # Documentation files (alternatively `doc`)
-    ├── src                         # Automated tests (alternatively `spec` or `tests`)
-    │   ├── Controller              # Source files (alternatively `lib` or `app`)
+    ├── config                      # Configuration files
+    ├── public                      # Public files
+    ├── src                         # Source files
+    │   ├── Controller              # 
     |   └── DataFixtures            #
-    ├── tests                       # Tools and utilities
+    ├── tests                       # Automated tests
     └── README.md
+    
+### Configuration files
+You can configure the beahviour of the application and the libraries with these files. These files use YAML language.
+
+More information : [Configuring Symfony](https://symfony.com/doc/current/configuration.html)
+
+### 
 
 ## More documentation
 
