@@ -38,39 +38,40 @@ More information : [Configuring Symfony](https://symfony.com/doc/current/configu
 
 ### Public files
 
-Your domain has to be linked to this folder. This is the only folder that the public can access. It contains CSS, Javascript and media files
+Your domain has to be linked to this folder. This is the only folder that the public can access. It contains CSS, Javascript and media files.
 
 ### Source files
 
 Contains the whole files of the program.
 
-**Controller** : contains the whole a  
+**Controller** : contains the routing files  
+See [Controller](https://symfony.com/doc/current/controller.html).
+
+
+**DataFixtures** : contains a file to generate a set of fake data
+See [DoctrineFixturesBundle](https://symfony.com/bundles/DoctrineFixturesBundle/current/index.html).
+
+
+**Entity** : contains the Task and User objects
+See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html).
+
+**Form** : contains the Task and User forms.
+See [Forms](https://symfony.com/doc/current/forms.html), [Form Types](https://symfony.com/doc/current/reference/forms/types.html).
+
+**Repository** : contains the Task and User repositories.
+See [Repository](https://symfony.com/doc/current/controller.html).
+
+**Security** : contains the security files (Authenticator, TaskVoter, AccessDeniedHandler).
 See [Symfony Controller](https://symfony.com/doc/current/controller.html).
 
-
-**DataFixtures** : contains the whole a  
-See [Symfony Controller](https://symfony.com/doc/current/controller.html).
-
-
-**Entity** : contains the whole a  
-See [Symfony Controller](https://symfony.com/doc/current/controller.html).
-
-**Form** : contains the whole a  
-See [Symfony Controller](https://symfony.com/doc/current/controller.html).
-
-**Repository** : contains the whole a  
-See [Symfony Controller](https://symfony.com/doc/current/controller.html).
-
-**Security** : contains the whole a  
-See [Symfony Controller](https://symfony.com/doc/current/controller.html).
-
-**Service** : contains the whole a  
-See [Symfony Controller](https://symfony.com/doc/current/controller.html).
+**Service** : contains a service to customise the return to the previous page. It is used in few cases.
 
 
 ### Template files
+twig
 
 ### Automated tests
+phpunit
 
 ## More documentation
 
