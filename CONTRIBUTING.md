@@ -28,9 +28,9 @@ More information : [Configuring Symfony](https://symfony.com/doc/current/configu
 
 ### Source files
 
-### Automated tests
-
 ### Template files
+
+### Automated tests
 
 ## More documentation
 
