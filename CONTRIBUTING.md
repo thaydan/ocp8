@@ -21,7 +21,12 @@ This is the project architecture. Just below, you can find the details of each f
     ├── public                      # Public files
     ├── src                         # Source files
     │   ├── Controller              
-    |   └── DataFixtures           
+    │   ├── DataFixtures         
+    │   ├── Entity              
+    │   ├── Form         
+    │   ├── Repository         
+    │   ├── Security
+    |   └── Service           
     ├── templates                   # Template files
     ├── tests                       # Automated tests
     └── README.md
@@ -33,7 +38,35 @@ More information : [Configuring Symfony](https://symfony.com/doc/current/configu
 
 ### Public files
 
+Your domain has to be linked to this folder. This is the only folder that the public can access. It contains CSS, Javascript and media files
+
 ### Source files
+
+Contains the whole files of the program.
+
+**Controller** : contains the whole a  
+See [Symfony Controller](https://symfony.com/doc/current/controller.html).
+
+
+**DataFixtures** : contains the whole a  
+See [Symfony Controller](https://symfony.com/doc/current/controller.html).
+
+
+**Entity** : contains the whole a  
+See [Symfony Controller](https://symfony.com/doc/current/controller.html).
+
+**Form** : contains the whole a  
+See [Symfony Controller](https://symfony.com/doc/current/controller.html).
+
+**Repository** : contains the whole a  
+See [Symfony Controller](https://symfony.com/doc/current/controller.html).
+
+**Security** : contains the whole a  
+See [Symfony Controller](https://symfony.com/doc/current/controller.html).
+
+**Service** : contains the whole a  
+See [Symfony Controller](https://symfony.com/doc/current/controller.html).
+
 
 ### Template files
 
