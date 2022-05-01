@@ -13,8 +13,9 @@
     ├── config                      # Configuration files
     ├── public                      # Public files
     ├── src                         # Source files
-    │   ├── Controller              # 
-    |   └── DataFixtures            #
+    │   ├── Controller              
+    |   └── DataFixtures           
+    ├── templates                   # Template files
     ├── tests                       # Automated tests
     └── README.md
 
@@ -23,7 +24,13 @@ You can configure the beahviour of the application and the libraries with these 
 
 More information : [Configuring Symfony](https://symfony.com/doc/current/configuration.html)
 
-### 
+### Public files
+
+### Source files
+
+### Automated tests
+
+### Template files
 
 ## More documentation
 
