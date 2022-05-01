@@ -15,7 +15,7 @@
 
 ## tree
 
-    .
+  .
     ├── build                   # Compiled files (alternatively `dist`)
     ├── docs                    # Documentation files (alternatively `doc`)
     ├── src                     # Source files (alternatively `lib` or `app`)
