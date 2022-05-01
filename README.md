@@ -10,8 +10,8 @@ ToDo & Co is an application to manage your daily tasks.
 
 ## Installation
 
-**expliquer pour .env  
-+ (refaire le projet de 0 pour tester)**
+**expliquer pour .env**  
+**+ (refaire le projet de 0 pour tester)**
 
 1. Copy the repository
 2. Install dependencies with "composer install"
