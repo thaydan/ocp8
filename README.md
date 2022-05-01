@@ -13,7 +13,7 @@ ToDo & Co is an application to manage your daily tasks.
 **expliquer pour .env**  
 **+ (refaire le projet de 0 pour tester)**
 
-1. Copy the repository
+### 1. Copy the repository
 2. Install dependencies
 ```bash
 composer install
