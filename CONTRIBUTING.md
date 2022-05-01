@@ -48,23 +48,23 @@ Contains the whole files of the program.
 See [Controller](https://symfony.com/doc/current/controller.html).
 
 
-**DataFixtures** : contains a file to generate a set of fake data
+**DataFixtures** : contains a file to generate a set of fake data  
 See [DoctrineFixturesBundle](https://symfony.com/bundles/DoctrineFixturesBundle/current/index.html).
 
 
-**Entity** : contains the Task and User objects
+**Entity** : contains the Task and User objects  
 See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html).
 
-**Form** : contains the Task and User forms.
+**Form** : contains the Task and User forms.  
 See [Forms](https://symfony.com/doc/current/forms.html), [Form Types](https://symfony.com/doc/current/reference/forms/types.html).
 
-**Repository** : contains the Task and User repositories.
+**Repository** : contains the Task and User repositories.  
 See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html).
 
-**Security** : contains the security files (Authenticator, TaskVoter, AccessDeniedHandler).
+**Security** : contains the security files (Authenticator, TaskVoter, AccessDeniedHandler).  
 See [Security](https://symfony.com/doc/current/security.html).
 
-**Service** : contains a service to customise the return to the previous page. It is used in few cases.
+**Service** : contains a service to customise the return to the previous page. It is used in few cases.  
 
 
 ### Template files
