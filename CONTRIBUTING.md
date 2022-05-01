@@ -13,6 +13,8 @@
 -- Controller :
 - tests :
 
+## tree
+
     .
     ├── build                   # Compiled files (alternatively `dist`)
     ├── docs                    # Documentation files (alternatively `doc`)
