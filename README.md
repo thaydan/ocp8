@@ -42,4 +42,4 @@ Admin | `admin@admin.com` | `admin`
 User | `user@user.com` | `user`  
 
 ## Contributing
-To contribute to the project, see the [contributing file](/CONTRIBUTING.md)
+To contribute to the project, see the [contributing file](/CONTRIBUTING.md).
