@@ -32,7 +32,7 @@ This is the project architecture. Just below, you can find the details of each f
     └── README.md
 
 ### Configuration files
-You can configure the beahviour of the application and the libraries with these files. These files use YAML language.
+You can configure the behavior of the application and the libraries with these files. These files use YAML language.
 
 More information : [Configuring Symfony](https://symfony.com/doc/current/configuration.html)
 
@@ -59,16 +59,18 @@ See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.ht
 See [Forms](https://symfony.com/doc/current/forms.html), [Form Types](https://symfony.com/doc/current/reference/forms/types.html).
 
 **Repository** : contains the Task and User repositories.
-See [Repository](https://symfony.com/doc/current/controller.html).
+See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html).
 
 **Security** : contains the security files (Authenticator, TaskVoter, AccessDeniedHandler).
-See [Symfony Controller](https://symfony.com/doc/current/controller.html).
+See [Security](https://symfony.com/doc/current/security.html).
 
 **Service** : contains a service to customise the return to the previous page. It is used in few cases.
 
 
 ### Template files
 twig
+
+See [Twig documentation](https://twig.symfony.com/doc/3.x/).
 
 ### Automated tests
 phpunit
