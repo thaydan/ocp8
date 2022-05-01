@@ -42,4 +42,4 @@ Admin | `admin@admin.com` | `admin`
 User | `user@user.com` | `user`  
 
 ## Contributing
-See [CONTRIBUTING](/CONTRIBUTING.MD)
+See [CONTRIBUTING](/CONTRIBUTING.md)
