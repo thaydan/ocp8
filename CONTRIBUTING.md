@@ -1,5 +1,7 @@
 # Contributing
 
+## New contributor
+
 ## Pull requests
 
 1. créer branche correspondant à l'issue
