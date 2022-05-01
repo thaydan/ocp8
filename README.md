@@ -40,3 +40,6 @@ php bin/console doctrine:fixtures:load
 --- | --- | ---
 Admin | `admin@admin.com` | `admin`  
 User | `user@user.com` | `user`  
+
+## Contributing
+See [CONTRIBUTING](/CONTRIBUTING.MD)
