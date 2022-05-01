@@ -8,6 +8,7 @@
 2. créer une pull request de la branche vers master
 
 ## Project Architecture
+This is the project architecture
 
     .
     ├── config                      # Configuration files
