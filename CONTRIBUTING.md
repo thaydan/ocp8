@@ -16,10 +16,13 @@
 ## tree
 
     .
-    ├── build                   # Compiled files (alternatively `dist`)
-    ├── docs                    # Documentation files (alternatively `doc`)
-    │   ├── src                     # Source files (alternatively `lib` or `app`)
-    ├── test                    # Automated tests (alternatively `spec` or `tests`)
-    ├── tools                   # Tools and utilities
-    ├── LICENSE
+    ├── config                  # Compiled files (alternatively `dist`)
+    ├── public                  # Documentation files (alternatively `doc`)
+    ├── src                     # Automated tests (alternatively `spec` or `tests`)
+    │   ├── Controller          # Source files (alternatively `lib` or `app`)
+    ├── tests                   # Tools and utilities
     └── README.md
+
+## More documentation
+
+symfony 
