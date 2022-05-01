@@ -7,14 +7,6 @@
 
 ## Project Architecture
 
-- config : contains files of configuration (yaml files)
-- public : 
-- src : contains the program
--- Controller :
-- tests :
-
-## tree
-
     .
     ├── config                      # Configuration files
     ├── public                      # Public files
@@ -23,7 +15,7 @@
     |   └── DataFixtures            #
     ├── tests                       # Automated tests
     └── README.md
-    
+
 ### Configuration files
 You can configure the beahviour of the application and the libraries with these files. These files use YAML language.
 
