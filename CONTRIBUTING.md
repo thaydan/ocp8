@@ -2,6 +2,12 @@
 
 ## New contributor
 
+explications / bienvue
+
+1. Pull requests
+2. Project Architecture
+3. More documentation
+
 ## Pull requests
 
 1. créer branche correspondant à l'issue
