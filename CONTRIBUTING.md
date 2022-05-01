@@ -16,11 +16,12 @@
 ## tree
 
     .
-    ├── config                  # Compiled files (alternatively `dist`)
-    ├── public                  # Documentation files (alternatively `doc`)
-    ├── src                     # Automated tests (alternatively `spec` or `tests`)
-    │   ├── Controller          # Source files (alternatively `lib` or `app`)
-    ├── tests                   # Tools and utilities
+    ├── config                      # Compiled files (alternatively `dist`)
+    ├── public                      # Documentation files (alternatively `doc`)
+    ├── src                         # Automated tests (alternatively `spec` or `tests`)
+    │   ├── Controller              # Source files (alternatively `lib` or `app`)
+    |   └── DataFixtures            #
+    ├── tests                       # Tools and utilities
     └── README.md
 
 ## More documentation
