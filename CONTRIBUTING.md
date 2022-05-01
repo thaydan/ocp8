@@ -6,3 +6,9 @@
 2. créer une pull request de la branche vers master
 
 ## Project Architecture
+
+- config : contains files of configuration (yaml files)
+- public : 
+- src : contains the program
+-- Controller :
+- tests :
