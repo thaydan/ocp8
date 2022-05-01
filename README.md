@@ -17,6 +17,7 @@ ToDo & Co is an application to manage your daily tasks.
 2. Install dependencies with 
 ```bash
 "composer install"
+```
 4. Create database : "php bin/console doctrine:database:create"
 5. Update database schema : "php bin/console doctrine:database:update --force"
 
