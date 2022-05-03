@@ -13,6 +13,8 @@ explications / bienvue
 1. créer branche correspondant à l'issue
 2. créer une pull request de la branche vers master
 
+(liens doc github)
+
 ## Project Architecture
 This is the project architecture. Just below, you can find the details of each folder.
 
