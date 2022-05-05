@@ -4,10 +4,13 @@
 
 Welcome to this guide for conbributing.
 
-explications / bienvenue
+To contribute, you need to keep in mind the follow points :
+- 
 
-(LA DETTE THECNIQUE DOIT ETRE REFLECHIS / QUALITE DU CODE)
-Table of content
+
+(LA DETTE THECNIQUE DOIT ETRE REFLECHIS / QUALITE DU CODE)  
+
+#### Table of content
 
 1. [Pull requests](#pull-requests)
 2. [Project Architecture](#architecture)
