@@ -1,11 +1,8 @@
 # Contributing
 
-## New contributor
-
 Welcome to this guide for conbributing.  
 
 To contribute, you need to keep in mind the follow points :
-- 
 
 
 (LA DETTE THECNIQUE DOIT ETRE REFLECHIS / QUALITE DU CODE)  
