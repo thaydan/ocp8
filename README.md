@@ -18,11 +18,11 @@ ToDo & Co is an application to manage your daily tasks.
 ```bash
   composer install
 ```
-3. Create database
+4. Create database
 ```bash
   php bin/console doctrine:database:create
 ```
-4. Update database schema
+5. Update database schema
 ```bash
   php bin/console doctrine:database:update --force
 ```
