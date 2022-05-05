@@ -16,6 +16,7 @@ ToDo & Co is an application to manage your daily tasks.
 1. Copy the repository  
 2. Complete the .env file
 3. Install dependencies
+
   composer install
 
 3. Create database
