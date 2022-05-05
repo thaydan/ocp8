@@ -7,10 +7,11 @@ Welcome to this guide for conbributing.
 explications / bienvenue
 
 (LA DETTE THECNIQUE DOIT ETRE REFLECHIS / QUALITE DU CODE)
+Table of content
 
 1. [Pull requests](#pull-requests)
-2. Project Architecture
-3. More documentation
+2. [Project Architecture](#architecture)
+3. [More documentation](#more)
 
 ## <a name="pull-requests"></a>Pull requests
 
@@ -19,7 +20,7 @@ explications / bienvenue
 
 (liens doc github)
 
-## Project Architecture
+## <a name="architecture"></a>Project Architecture
 This is the project architecture. Just below, you can find the details of each folder.
 
     .
@@ -88,6 +89,6 @@ phpunit
 
 (METTRE TOUS LES PREREQUIS DE LA CONSIGNE)
 
-## More documentation
+## <a name="more"></a>More documentation
 
 symfony 
