@@ -2,7 +2,7 @@
 
 ## New contributor
 
-Welcome to this guide for conbributing.
+Welcome to this guide for conbributing.  
 
 To contribute, you need to keep in mind the follow points :
 - 
