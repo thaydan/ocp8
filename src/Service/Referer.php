@@ -41,7 +41,7 @@ class Referer
         return $this->requestSession->get('referer') ?? null;
     }
 
-    public function goTo(): Response
+    public function go(): Response
     {
         if ($this->get()) {
             return new RedirectResponse($this->get());
@@ -52,6 +52,6 @@ class Referer
     public function setAndGo(): Response
     {
         $this->set();
-        return $this->goTo();
+        return $this->go();
     }
 }

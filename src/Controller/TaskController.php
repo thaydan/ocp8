@@ -7,7 +7,6 @@ use App\Form\TaskType;
 use App\Repository\TaskRepository;
 use App\Service\Referer;
 use Doctrine\ORM\EntityManagerInterface;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -22,9 +21,7 @@ class TaskController extends AbstractController
         $this->manager = $manager;
     }
 
-    /**
-     * @Route("/tasks", name="task_list")
-     */
+    #[Route(path: '/tasks', name: 'task_list')]
     public function listTask(TaskRepository $taskRepository): Response
     {
         return $this->render('task/list.html.twig', [
@@ -38,9 +35,7 @@ class TaskController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/tasks/done", name="task_list_done")
-     */
+    #[Route(path: '/tasks/done', name: 'task_list_done')]
     public function listTaskDone(TaskRepository $taskRepository): Response
     {
         return $this->render('task/list.html.twig', [
@@ -54,9 +49,7 @@ class TaskController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/tasks/create", name="task_create")
-     */
+    #[Route(path: '/tasks/create', name: 'task_create')]
     public function createTask(Request $request): Response
     {
         $task = new Task();
@@ -77,9 +70,7 @@ class TaskController extends AbstractController
         return $this->render('task/create.html.twig', ['form' => $form->createView()]);
     }
 
-    /**
-     * @Route("/tasks/{id}/edit", name="task_edit")
-     */
+    #[Route(path: '/tasks/{id}/edit', name: 'task_edit')]
     public function editTask(Task $task, Request $request): Response
     {
         $this->denyAccessUnlessGranted('edit', $task);
@@ -101,9 +92,7 @@ class TaskController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/tasks/{id}/toggle", name="task_toggle")
-     */
+    #[Route(path: '/tasks/{id}/toggle', name: 'task_toggle')]
     public function toggleTask(Task $task): Response
     {
         $this->denyAccessUnlessGranted('edit', $task);
@@ -116,9 +105,7 @@ class TaskController extends AbstractController
         return $this->redirectToRoute('task_list');
     }
 
-    /**
-     * @Route("/tasks/{id}/delete", name="task_delete")
-     */
+    #[Route(path: '/tasks/{id}/delete', name: 'task_delete')]
     public function deleteTask(Task $task, Referer $referer): Response
     {
         $this->denyAccessUnlessGranted('edit', $task);
