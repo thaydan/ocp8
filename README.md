@@ -10,7 +10,7 @@ ToDo & Co is an application to manage your daily tasks.
 
 ## Installation
 
-**+ (refaire le projet de 0 pour tester)**
+**(refaire le projet de 0 pour tester)**
 
 1. Copy the repository  
 2. Complete the .env file (you need to set the database URL)
