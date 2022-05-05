@@ -2,15 +2,17 @@
 
 ## New contributor
 
+Welcome to this guide for conbributing.
+
 explications / bienvenue
 
 (LA DETTE THECNIQUE DOIT ETRE REFLECHIS / QUALITE DU CODE)
 
-1. Pull requests
+1. [Pull requests](#pull-requests)
 2. Project Architecture
 3. More documentation
 
-## Pull requests
+## <a name="pull-requests"></a>Pull requests
 
 1. créer branche correspondant à l'issue
 2. créer une pull request de la branche vers master
