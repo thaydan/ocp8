@@ -57,23 +57,18 @@ Contains the whole files of the program.
 
 Folder | Details
 --- | --- 
-
-src/Controller | contains the routing files and the actions of the program (CHECKER DOC SYMFONY)<br>See [Controller](https://symfony.com/doc/current/controller.html).
-src/DataFixtures | contains a file to generate a set of fake data<br>See [DoctrineFixturesBundle](https://symfony.com/bundles/DoctrineFixturesBundle/current/index.html).
+src/Controller | Contains the routing files and the actions of the program (CHECKER DOC SYMFONY)<br>See [Controller](https://symfony.com/doc/current/controller.html).
+src/DataFixtures | Contains a file to generate a set of fake data<br>See [DoctrineFixturesBundle](https://symfony.com/bundles/DoctrineFixturesBundle/current/index.html).
 src/Entity | contains (l'ensemble des donénes persistées en base de données) (in this case the Task and User objects)  
 See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html).
-
-**Form** : contains (IDEM ENTITY) the Task and User forms.  
+src/Form | contains (IDEM ENTITY) the Task and User forms.  
 See [Forms](https://symfony.com/doc/current/forms.html), [Form Types](https://symfony.com/doc/current/reference/forms/types.html).
-
-**Repository** : contains (IDEM ENTITY) the Task and User repositories.  
+src/Repository | contains (IDEM ENTITY) the Task and User repositories.  
 See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html).
-
-**Security** : contains the security files (Authenticator, TaskVoter, AccessDeniedHandler).  
+src/Security | contains the security files (Authenticator, TaskVoter, AccessDeniedHandler).  
 See [Security](https://symfony.com/doc/current/security.html).
 (LIEN AUTHENTIFICATION)
-
-**Service** : contains a service to customise the return to the previous page. It is used in few cases.  
+src/Service | contains a service to customise the return to the previous page. It is used in few cases.  
 
 
 ### Template files
