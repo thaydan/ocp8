@@ -82,4 +82,6 @@ See [Symfony Testing](https://symfony.com/doc/current/testing.html) and [PHPUnit
 
 ## <a name="more"></a>More documentation
 
-symfony 
+liens symfony 
+
+liens vers doc pdf
