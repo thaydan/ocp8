@@ -36,22 +36,21 @@ This is the project architecture. Just below, you can find the details of each f
     │   ├── Entity              
     │   ├── Form         
     │   ├── Repository         
-    │   ├── Security
-    |   └── Service           
+    │   ├── Security         
     ├── templates                   # Template files
     ├── tests                       # Automated tests
     └── README.md
 
-### Configuration files (/config)
+### Configuration files (config)
 You can configure the behavior of the application and the libraries with these files. These files use YAML language.
 
 More information : [Configuring Symfony](https://symfony.com/doc/current/configuration.html)
 
-### Public files (/public)
+### Public files (public)
 
 (ROOT SERVER) to be linked to this folder. This is the only folder should be the only one to be publicly accessible. It contains CSS, Javascript and media files.
 
-### Source files (/src)
+### Source files (src)
 
 Contains the whole files of the program.
 
@@ -66,13 +65,13 @@ src/Security | contains the security files (Authenticator, TaskVoter, AccessDeni
 (LIEN AUTHENTIFICATION)
 
 
-### Template files
+### Template files (templates)
 ensemble des templates
 twig
 
 See [Twig documentation](https://twig.symfony.com/doc/3.x/).
 
-### Automated tests
+### Automated tests (tests)
 ensemble des tests
 more than 70% 
 phpunit
