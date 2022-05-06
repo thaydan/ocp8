@@ -1,6 +1,6 @@
 # Contributing
 
-Welcome to this guide for conbributing.  
+Welcome to the guide for conbributing.  
 
 Before to contribute, you need to keep in mind the follow points :
 - Use PSR-12 standard
