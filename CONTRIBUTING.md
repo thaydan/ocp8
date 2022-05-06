@@ -6,7 +6,7 @@ Before to contribute, you need to keep in mind the follow points :
 - Use PSR-12 standard
 - Keep a code with low duplication
 - Use Codacy to help you grow the code quality
-- The technical debt must be the lower
+- The technical debt must be the low as possible
 
 #### Table of content
 
