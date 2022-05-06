@@ -42,21 +42,19 @@ This is the project architecture. Just below, you can find the details of each f
     ├── tests                       # Automated tests
     └── README.md
 
-### Configuration files
+### Configuration files (/config)
 You can configure the behavior of the application and the libraries with these files. These files use YAML language.
 
 More information : [Configuring Symfony](https://symfony.com/doc/current/configuration.html)
 
-### Public files
+### Public files (/public)
 
 (ROOT SERVER) to be linked to this folder. This is the only folder should be the only one to be publicly accessible. It contains CSS, Javascript and media files.
 
-### Source files
+### Source files (/src)
 
 Contains the whole files of the program.
 
-  
-Folder | Details
 --- | --- 
 **Controller** | contains the routing files and the actions of the program (CHECKER DOC SYMFONY)<br>See [Controller](https://symfony.com/doc/current/controller.html).
 **DataFixtures** | contains a file to generate a set of fake data<br>See [DoctrineFixturesBundle](https://symfony.com/bundles/DoctrineFixturesBundle/current/index.html).
