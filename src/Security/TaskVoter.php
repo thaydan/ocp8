@@ -2,9 +2,9 @@
 
 namespace App\Security;
 
-use App\Entity\Post;
 use App\Entity\Task;
 use App\Entity\User;
+use LogicException;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\Authorization\Voter\Voter;
 use Symfony\Component\Security\Core\Security;
@@ -12,8 +12,8 @@ use Symfony\Component\Security\Core\Security;
 class TaskVoter extends Voter
 {
     // these strings are just invented: you can use anything
-    const VIEW = 'view';
-    const EDIT = 'edit';
+    public const VIEW = 'view';
+    public const EDIT = 'edit';
 
     private Security $security;
 
@@ -59,7 +59,7 @@ class TaskVoter extends Voter
             return $this->canEdit($task, $user);
         }
 
-        throw new \LogicException('This code should not be reached!');
+        throw new LogicException('This code should not be reached!');
     }
 
     private function canEdit(Task $task, User $user): bool

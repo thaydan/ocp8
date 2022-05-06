@@ -6,14 +6,14 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use Symfony\Component\Routing\Matcher\UrlMatcher;
 
 class Referer
 {
     private Request $request;
-    private $requestSession;
-    private $router;
+    private SessionInterface $requestSession;
+    private UrlGeneratorInterface $router;
 
 
     public function __construct(RequestStack $requestStack, UrlGeneratorInterface $router)
@@ -30,7 +30,7 @@ class Referer
         $refererPath = str_replace($baseURL, '', $referer);
         $loginPath = $this->router->generate('app_login');
 
-        if($referer != null && $refererPath != $loginPath) {
+        if ($referer != null && $refererPath != $loginPath) {
             return $this->requestSession->set('referer', $referer);
         }
         return null;

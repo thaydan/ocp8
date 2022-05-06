@@ -3,6 +3,7 @@
 namespace App\Security;
 
 use App\Entity\User;
+use LogicException;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\Authorization\Voter\Voter;
 use Symfony\Component\Security\Core\Security;
@@ -10,8 +11,8 @@ use Symfony\Component\Security\Core\Security;
 class UserVoter extends Voter
 {
     // these strings are just invented: you can use anything
-    const EDIT = 'edit';
-    const DELETE = 'delete';
+    public const EDIT = 'edit';
+    public const DELETE = 'delete';
 
     private Security $security;
 
@@ -53,6 +54,6 @@ class UserVoter extends Voter
             return $user !== $subject;
         }
 
-        throw new \LogicException('This code should not be reached!');
+        throw new LogicException('This code should not be reached!');
     }
 }
