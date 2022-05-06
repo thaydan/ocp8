@@ -32,7 +32,7 @@
 <!-- Page Content -->
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 mt-2">
             {% for flash_message in app.session.flashBag.get('success') %}
                 <div class="alert alert-success" role="alert">
                     <strong>Superbe !</strong> {{ flash_message }}

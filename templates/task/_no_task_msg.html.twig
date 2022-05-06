@@ -1,0 +1,9 @@
+{% if list_no_task %}
+    <div class="alert alert-warning d-flex flex-column flex-md-row align-items-center" role="alert">
+        <div>{{ list_no_task.msg }}</div>
+        {% if list_no_task.btn_route is defined and list_no_task.btn_title is defined %}
+            <a href="{{ path(list_no_task.btn_route) }}" class="btn btn-warning ms-0 ms-md-3 mt-3 mt-md-0">
+                {{ list_no_task.btn_title }}</a>
+        {% endif %}
+    </div>
+{% endif %}

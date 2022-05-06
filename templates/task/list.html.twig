@@ -5,14 +5,17 @@
 {% endblock %}
 
 {% block body %}
-    <div class="navbar">
+    <div class="navbar flex-column flex-md-row">
         <h1>{{ list_title }}</h1>
-        <a href="{{ path('task_create') }}" class="btn btn-success ms-auto d-inline">Créer une tâche</a>
-        {% if list_custom_button %}
-            <a href="{{ path(list_custom_button['route_name']) }}" class="btn btn-{{ list_custom_button['color'] }} ms-1">
-                {{ list_custom_button['title'] }}
-            </a>
-        {% endif %}
+        <div>
+            <a href="{{ path('task_create') }}" class="btn btn-success ms-auto">Créer une tâche</a>
+            {% if list_custom_button %}
+                <a href="{{ path(list_custom_button.route_name) }}"
+                   class="btn btn-{{ list_custom_button.color }} ms-1">
+                    {{ list_custom_button.title }}
+                </a>
+            {% endif %}
+        </div>
     </div>
 
     <div class="row">
@@ -45,10 +48,7 @@
                 </div>
             {% endfor %}
         {% else %}
-            <div class="alert alert-warning" role="alert">
-                Il n'y a pas encore de tâche enregistrée.
-                <a href="{{ path('task_create') }}" class="btn btn-warning pull-right">Créer une tâche</a>
-            </div>
+            {% include 'task/_no_task_msg.html.twig' %}
         {% endif %}
     </div>
 {% endblock %}

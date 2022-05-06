@@ -30,6 +30,11 @@ class TaskController extends AbstractController
                 'title' => 'Tâches terminées',
                 'color' => 'secondary'
             ],
+            'list_no_task' => [
+                'msg' => "Il n'y a pas de tâche.",
+                'btn_route' => 'task_create',
+                'btn_title' => 'Créer une tâche'
+            ],
             'tasks' => $taskRepository->findBy(['isDone' => false])
         ]);
     }
@@ -43,6 +48,9 @@ class TaskController extends AbstractController
                 'route_name' => 'task_list',
                 'title' => 'Tâches à faire',
                 'color' => 'info'
+            ],
+            'list_no_task' => [
+                'msg' => "Il n'y a pas encore de tâche terminée."
             ],
             'tasks' => $taskRepository->findBy(['isDone' => true])
         ]);
