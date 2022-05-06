@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\UserType;
+use App\Repository\UserRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -85,8 +86,14 @@ class UserController extends AbstractController
     {
         $this->denyAccessUnlessGranted('delete', $user);
 
-//        $this->manager->remove($user);
-//        $this->manager->flush();
+        foreach ($user->getTasks() as $task) {
+            $task->setUser(null);
+            $this->manager->persist($task);
+            $this->manager->flush();
+        }
+
+        $this->manager->remove($user);
+        $this->manager->flush();
 
         $this->addFlash('success', "L'utilisateur a bien été supprimé.");
 

@@ -1,16 +1,1 @@
 {% extends 'bootstrap_5_layout.html.twig' %}
-
-{% block form_widget_simple -%}
-    {% if form.vars.type is defined and form.vars.type == 'file' and form.parent.vars.value %}
-        <img class="w-100" src="{{ asset('/uploads/' ~ form.parent.vars.value.filename) }}" alt="">
-    {% elseif form.vars.name is defined and form.vars.name == 'url' and form.parent.vars.value %}
-        {% set video = {
-            'title': form.parent.vars.data.title,
-            'platformDomain': form.parent.vars.data.platformDomain,
-            'platformVideoId': form.parent.vars.data.platformVideoId
-        }%}
-        {{ include('trick/_players.html.twig', {video: video}) }}
-    {% else %}
-        {{- parent() -}}
-    {% endif %}
-{%- endblock form_widget_simple %}
