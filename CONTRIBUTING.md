@@ -18,7 +18,7 @@ Before to contribute, you need to keep in mind the follow points :
 
 For a better version management, it is recommended to 
 
-1. Create issues for each modification to be made
+1. Create issues for each modification that must be made
 2. Create a branch corresponding to the issue you want to process
 3. Make a pull request from the branch to master to publish the changes
 
@@ -42,9 +42,9 @@ This is the project architecture. Just below, you can find the details of each f
     └── README.md
 
 ### Configuration files (config)
-You can configure the behavior of the application and the libraries with these files. These files use YAML language.
+You can configure the behavior of the application and the libraries with these files. These files use the YAML language.
 
-More information : [Configuring Symfony](https://symfony.com/doc/current/configuration.html)
+See [Configuring Symfony](https://symfony.com/doc/current/configuration.html)
 
 ### Public files (public)
 
