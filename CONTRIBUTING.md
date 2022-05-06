@@ -73,7 +73,9 @@ See [Twig documentation](https://twig.symfony.com/doc/3.x/).
 ### Automated tests (tests)
 
 It contains all the unit and functional tests.  
+
 To maintain code quality, it is important to set up unit and functional tests, and to maintain a test coverage of over 70%.  
+
 To run tests, you need to use PHPUnit.
 
 See [Symfony Testing](https://symfony.com/doc/current/testing.html) and [PHPUnit Documentation](https://phpunit.readthedocs.io/en/stable/index.html).
