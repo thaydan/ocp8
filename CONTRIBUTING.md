@@ -54,15 +54,14 @@ More information : [Configuring Symfony](https://symfony.com/doc/current/configu
 
 Contains the whole files of the program.
 
-Folder | Details
---- | --- 
-src/Controller | Contains the routing files and the actions of the program (CHECKER DOC SYMFONY)<br>See [Controller](https://symfony.com/doc/current/controller.html).
-src/DataFixtures | Contains a file to generate a set of fake data<br>See [DoctrineFixturesBundle](https://symfony.com/bundles/DoctrineFixturesBundle/current/index.html).
-src/Entity | contains (l'ensemble des donénes persistées en base de données) (in this case the Task and User objects)<br>See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html).
-src/Form | contains (IDEM ENTITY) the Task and User forms.<br>See [Forms](https://symfony.com/doc/current/forms.html), [Form Types](https://symfony.com/doc/current/reference/forms/types.html).
-src/Repository | contains (IDEM ENTITY) the Task and User repositories.<br>See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html).
-src/Security | contains the security files (Authenticator, TaskVoter, AccessDeniedHandler).<br>See [Security](https://symfony.com/doc/current/security.html).(LIEN AUTHENTIFICATION)
-
+| Folder           | Details                                                                                                                                                                                          |
+|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| src/Controller   | Contains the routing files and the actions of the program (CHECKER DOC SYMFONY)<br>See [Controller](https://symfony.com/doc/current/controller.html).                                            |
+| src/DataFixtures | Contains a file to generate a set of fake data<br>See [DoctrineFixturesBundle](https://symfony.com/bundles/DoctrineFixturesBundle/current/index.html).                                           |
+| src/Entity       | contains (l'ensemble des donénes persistées en base de données) (in this case the Task and User objects)<br>See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html). |
+| src/Form         | contains (IDEM ENTITY) the Task and User forms.<br>See [Forms](https://symfony.com/doc/current/forms.html), [Form Types](https://symfony.com/doc/current/reference/forms/types.html).            |
+| src/Repository   | contains (IDEM ENTITY) the Task and User repositories.<br>See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html).                                                   |
+| src/Security     | contains the security files (Authenticator, TaskVoter, AccessDeniedHandler).<br>See [Security](https://symfony.com/doc/current/security.html).(LIEN AUTHENTIFICATION)                            |
 
 ### Template files (templates)
 ensemble des templates
