@@ -62,7 +62,7 @@ Contains the whole files of the program.
 | src/Entity       | Contains all data persisted in the database (currently the Task and User objects)<br>See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html). |
 | src/Form         | Contains all the forms (currently the Task and User forms).<br>See [Forms](https://symfony.com/doc/current/forms.html), [Form Types](https://symfony.com/doc/current/reference/forms/types.html).            |
 | src/Repository   | Contains all the repositories (currently the Task and User repositories).<br>See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html).                                                   |
-| src/Security     | Contains the security files (Authenticator, TaskVoter, AccessDeniedHandler).<br>See [Security](https://symfony.com/doc/current/security.html) and [Custom Authenticator](https://symfony.com/doc/current/security/custom_authenticator.html)                        |
+| src/Security     | Contains the security files (Authenticator, TaskVoter, AccessDeniedHandler).<br>See [Security](https://symfony.com/doc/current/security.html) and [Custom Authenticator](https://symfony.com/doc/current/security/custom_authenticator.html).                        |
 
 ### Template files (templates)
 It is in this folder that all page templates are stored.  
@@ -79,8 +79,6 @@ To maintain code quality, it is important to set up unit and functional tests, a
 To run tests, you need to use PHPUnit.
 
 See [Symfony Testing](https://symfony.com/doc/current/testing.html) and [PHPUnit Documentation](https://phpunit.readthedocs.io/en/stable/index.html).
-
-(METTRE TOUS LES PREREQUIS DE LA CONSIGNE)
 
 ## <a name="more"></a>More documentation
 
