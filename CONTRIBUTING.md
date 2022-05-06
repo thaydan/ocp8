@@ -49,7 +49,7 @@ See [Configuring Symfony](https://symfony.com/doc/current/configuration.html).
 
 ### Public files (public)
 
-The root server has to be linked to this folder. This is the only folder that must be publicly accessible. It contains CSS, Javascript and media files.
+This is the folder to which the root server should be linked. This is the only folder that must be publicly accessible. It contains CSS, Javascript and media files.
 
 ### Source files (src)
 
@@ -57,12 +57,12 @@ Contains the whole files of the program.
 
 | Folder           | Details                                                                                                                                                                                          |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| src/Controller   | Contains the routing files and the actions of the program (CHECKER DOC SYMFONY)<br>See [Controller](https://symfony.com/doc/current/controller.html).                                            |
+| src/Controller   | Contains the routing files and the actions of the program<br>See [Controller](https://symfony.com/doc/current/controller.html).                                            |
 | src/DataFixtures | Contains a file to generate a set of fake data<br>See [DoctrineFixturesBundle](https://symfony.com/bundles/DoctrineFixturesBundle/current/index.html).                                           |
-| src/Entity       | contains (l'ensemble des donénes persistées en base de données) (in this case the Task and User objects)<br>See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html). |
-| src/Form         | contains (IDEM ENTITY) the Task and User forms.<br>See [Forms](https://symfony.com/doc/current/forms.html), [Form Types](https://symfony.com/doc/current/reference/forms/types.html).            |
-| src/Repository   | contains (IDEM ENTITY) the Task and User repositories.<br>See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html).                                                   |
-| src/Security     | contains the security files (Authenticator, TaskVoter, AccessDeniedHandler).<br>See [Security](https://symfony.com/doc/current/security.html).(LIEN AUTHENTIFICATION)                            |
+| src/Entity       | Contains all data persisted in the database (in this case the Task and User objects)<br>See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html). |
+| src/Form         | Contains (IDEM ENTITY) the Task and User forms.<br>See [Forms](https://symfony.com/doc/current/forms.html), [Form Types](https://symfony.com/doc/current/reference/forms/types.html).            |
+| src/Repository   | Contains (IDEM ENTITY) the Task and User repositories.<br>See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html).                                                   |
+| src/Security     | Contains the security files (Authenticator, TaskVoter, AccessDeniedHandler).<br>See [Security](https://symfony.com/doc/current/security.html).(LIEN AUTHENTIFICATION)                            |
 
 ### Template files (templates)
 It is in this folder that all page templates are stored.  
