@@ -7,6 +7,7 @@ Before to contribute, you need to keep in mind the follow points :
 - Keep a code with low duplication
 - Use Codacy to help you grow the code quality
 - The technical debt must be the low as possible
+- Keep 
 
 #### Table of content
 
@@ -44,7 +45,7 @@ This is the project architecture. Just below, you can find the details of each f
 ### Configuration files (config)
 You can configure the behavior of the application and the libraries with these files. These files use the YAML language.
 
-See [Configuring Symfony](https://symfony.com/doc/current/configuration.html)
+See [Configuring Symfony](https://symfony.com/doc/current/configuration.html).
 
 ### Public files (public)
 
@@ -70,9 +71,12 @@ The template engine used is Twig. The page templates are therefore in .twig form
 See [Twig documentation](https://twig.symfony.com/doc/3.x/).
 
 ### Automated tests (tests)
-ensemble des tests
-more than 70% 
-phpunit
+
+It contains all the unit and functional tests.  
+To maintain code quality, it is important to set up unit and functional tests, and to maintain a test coverage of over 70%.  
+To run tests, you need to use PHPUnit.
+
+See [Symfony Testing](https://symfony.com/doc/current/testing.html) and [PHPUnit Documentation](https://phpunit.readthedocs.io/en/stable/index.html).
 
 (METTRE TOUS LES PREREQUIS DE LA CONSIGNE)
 
