@@ -49,7 +49,7 @@ See [Configuring Symfony](https://symfony.com/doc/current/configuration.html).
 
 ### Public files (public)
 
-(ROOT SERVER) to be linked to this folder. This is the only folder should be the only one to be publicly accessible. It contains CSS, Javascript and media files.
+The root server has to be linked to this folder. This is the only folder that must be publicly accessible. It contains CSS, Javascript and media files.
 
 ### Source files (src)
 
