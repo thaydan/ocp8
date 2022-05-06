@@ -26,8 +26,7 @@ ToDo & Co is an application to manage your daily tasks.
 ```bash
   php bin/console doctrine:database:update --force
 ```
-6. Load the fixtures  
-To install the demo data you need to load the fixtures with this command
+6. Load the fixtures to install the demo data
 
 ```bash
 php bin/console doctrine:fixtures:load
