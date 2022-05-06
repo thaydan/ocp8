@@ -5,7 +5,7 @@ Welcome to the guide for conbributing.
 Before to contribute, you need to keep in mind the follow points :
 - Use PSR-12 standard
 - Keep a code with low duplication
-- Use Codacy to help you to grow the code quality
+- Use Codacy to help you grow the code quality
 - The technical debt must be the lower
 
 #### Table of content
