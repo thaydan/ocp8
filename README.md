@@ -32,7 +32,7 @@ ToDo & Co is an application to manage your daily tasks.
 php bin/console doctrine:fixtures:load
 ```
 
-**Demo accounts included**  
+**Demo accounts included in fixtures**  
   
 &nbsp; | Email | Password
 --- | --- | ---
