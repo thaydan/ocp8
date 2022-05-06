@@ -2,17 +2,17 @@
 
 namespace App\Security;
 
-use App\Entity\Task;
 use App\Entity\User;
 use LogicException;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\Authorization\Voter\Voter;
 use Symfony\Component\Security\Core\Security;
 
-class TaskVoter extends Voter
+class UserVoter extends Voter
 {
     // these strings are just invented: you can use anything
     public const EDIT = 'edit';
+    public const DELETE = 'delete';
 
     private Security $security;
 
@@ -24,12 +24,12 @@ class TaskVoter extends Voter
     protected function supports(string $attribute, $subject): bool
     {
         // if the attribute isn't one we support, return false
-        if ($attribute != self::EDIT) {
+        if (!in_array($attribute, [self::EDIT, self::DELETE])) {
             return false;
         }
 
-        // only vote on `Task` objects
-        if (!$subject instanceof Task) {
+        // only vote on `User` objects
+        if (!$subject instanceof User) {
             return false;
         }
 
@@ -38,32 +38,25 @@ class TaskVoter extends Voter
 
     protected function voteOnAttribute(string $attribute, $subject, TokenInterface $token): bool
     {
-        // ROLE_ADMIN can do anything
-        if ($this->security->isGranted('ROLE_ADMIN')) {
-            return true;
-        }
-
         $user = $token->getUser();
+
+        // only ROLE_ADMIN can continue
+        if (!$this->security->isGranted('ROLE_ADMIN')) {
+            return false;
+        }
 
         if (!$user instanceof User) {
             // the user must be logged in; if not, deny access
             return false;
         }
 
-        // you know $subject is a Post object, thanks to `supports()`
-        /** @var Task $task */
-        $task = $subject;
-
-        if ($attribute == self::EDIT) {
-            return $this->canEdit($task, $user);
+        switch ($attribute) {
+            case self::EDIT:
+                return true;
+            case self::DELETE:
+                return $user !== $subject;
         }
 
         throw new LogicException('This code should not be reached!');
-    }
-
-    private function canEdit(Task $task, User $user): bool
-    {
-        // this assumes that the Post object has a `getOwner()` method
-        return $user === $task->getUser();
     }
 }

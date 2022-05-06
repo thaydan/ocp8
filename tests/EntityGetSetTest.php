@@ -20,10 +20,10 @@ class EntityGetSetTest extends TestCase
     {
         $bookReflection = new ReflectionClass(Task::class);
 
-        $task = (new Task);
+        $task = (new Task());
 
         foreach ($bookReflection->getProperties() as $reflectionProperty) {
-            if ($reflectionProperty->getName() == 'id') {
+            if ($reflectionProperty->getName() === 'id') {
                 continue;
             }
 
@@ -47,9 +47,10 @@ class EntityGetSetTest extends TestCase
     {
         $bookReflection = new ReflectionClass(Task::class);
 
-        $task = (new Task);
+        $task = (new Task());
 
         foreach ($bookReflection->getProperties() as $reflectionProperty) {
+            $reflectionProperty->setAccessible(true);
             $propertyFakeValue = $this->getFakeValue($reflectionProperty->getType());
             $propertyName = $reflectionProperty->getName();
 

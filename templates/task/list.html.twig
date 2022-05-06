@@ -5,36 +5,42 @@
 {% endblock %}
 
 {% block body %}
+    <div class="navbar">
+        <h1>{{ list_title }}</h1>
+        <a href="{{ path('task_create') }}" class="btn btn-success ms-auto d-inline">Créer une tâche</a>
+        {% if list_custom_button %}
+            <a href="{{ path(list_custom_button['route_name']) }}" class="btn btn-{{ list_custom_button['color'] }} ms-1">
+                {{ list_custom_button['title'] }}
+            </a>
+        {% endif %}
+    </div>
+
     <div class="row">
         {% if tasks %}
-            {% if app.request.get('_route') != 'task_list_anonymous' %}
-                <a href="{{ path('task_create') }}" class="btn btn-info pull-right px-3">Créer une tâche</a>
-            {% endif %}
-
             {% for task in tasks %}
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
-                        <div class="caption">
-                            <h4 class="pull-right">
-                                {% if task.isDone %}<span class="glyphicon glyphicon-ok"></span>{% else %}<span
-                                        class="glyphicon glyphicon-remove"></span>{% endif %}
-                            </h4>
-                            <h4><a href="{{ path('task_edit', {'id' : task.id }) }}">{{ task.title }}</a></h4>
-                            <p>{{ task.content }}</p>
+                <div class="col-sm-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a class=" text-decoration-none" href="{{ path('task_edit', {'id' : task.id }) }}">
+                                    {{ task.title }}
+                                </a>
+                            </h5>
+                            <p class="card-text">{{ task.content }}</p>
                             <i>{{ task.user ? 'Créée par ' ~ task.user.username|capitalize : 'Anonyme' }}</i>
+                            {% if task.user == app.user or (not task.user and is_granted('ROLE_ADMIN')) %}
+                                <div class="d-flex">
+                                    <form action="{{ path('task_toggle', {'id' : task.id }) }}">
+                                        <button class="btn btn-success btn-sm pull-right">
+                                            {% if not task.isDone %}Marquer comme faite{% else %}Marquer non terminée{% endif %}
+                                        </button>
+                                    </form>
+                                    <form action="{{ path('task_delete', {'id' : task.id }) }}" class="ms-1">
+                                        <button class="btn btn-danger btn-sm pull-right">Supprimer</button>
+                                    </form>
+                                </div>
+                            {% endif %}
                         </div>
-                        {% if task.user == app.user or (not task.user and is_granted('ROLE_ADMIN')) %}
-                            <div>
-                                <form action="{{ path('task_toggle', {'id' : task.id }) }}">
-                                    <button class="btn btn-success btn-sm pull-right">
-                                        {% if not task.isDone %}Marquer comme faite{% else %}Marquer non terminée{% endif %}
-                                    </button>
-                                </form>
-                                <form action="{{ path('task_delete', {'id' : task.id }) }}">
-                                    <button class="btn btn-danger btn-sm pull-right">Supprimer</button>
-                                </form>
-                            </div>
-                        {% endif %}
                     </div>
                 </div>
             {% endfor %}

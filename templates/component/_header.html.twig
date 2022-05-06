@@ -1,0 +1,31 @@
+<header class="fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #e3f2fd;" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="{{ path('homepage') }}">
+                <img src="{{ asset('img/Logo_OpenClassrooms.png') }}" alt="OpenClassrooms">
+                <span class="ms-2">To Do List app</span>
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-row-reverse" id="collapsibleNavbar">
+                <ul class="navbar-nav mt-3 mt-md-0">
+                    {% if is_granted('ROLE_ADMIN') %}
+                        <a href="{{ path('user_list') }}" class="btn btn-primary mb-1 mb-md-0 me-md-1" role="button">
+                            Liste des utilisateurs</a>
+                        <a href="{{ path('user_create') }}" class="btn btn-success mb-1 mb-md-0 me-md-1" role="button">
+                            Créer un utilisateur</a>
+                    {% endif %}
+
+                    {% if app.user %}
+                        <a href="{{ path('app_logout') }}" class="btn btn-danger mt-3 mt-md-0 m-auto ms-md-auto">Se déconnecter</a>
+                    {% else %}
+                        <a href="{{ path('app_login') }}" class="btn btn-success mt-3 mt-md-0">Se connecter</a>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
