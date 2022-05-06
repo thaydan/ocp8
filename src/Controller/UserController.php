@@ -62,6 +62,7 @@ class UserController extends AbstractController
     #[Route(path: '/{id}/edit', name: 'user_edit')]
     public function editUser(User $user, Request $request): Response
     {
+        $this->denyAccessUnlessGranted('edit', $user);
         $form = $this->createForm(UserType::class, $user);
 
         $form->handleRequest($request);
