@@ -55,7 +55,10 @@ More information : [Configuring Symfony](https://symfony.com/doc/current/configu
 
 Contains the whole files of the program.
 
-**Controller** : contains the routing files and the actions of the program (CHECKER DOC SYMFONY)  
+  
+Folder | Details
+--- | --- 
+**Controller** | contains the routing files and the actions of the program (CHECKER DOC SYMFONY)<br>
 See [Controller](https://symfony.com/doc/current/controller.html).
 
 
