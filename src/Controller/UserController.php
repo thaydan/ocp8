@@ -85,11 +85,12 @@ class UserController extends AbstractController
     {
         $this->denyAccessUnlessGranted('delete', $user);
 
-        $this->manager->remove($user);
-        $this->manager->flush();
+//        $this->manager->remove($user);
+//        $this->manager->flush();
 
         $this->addFlash('success', "L'utilisateur a bien été supprimé.");
 
+        //return new Response('fff');
         return $this->redirectToRoute('user_list');
     }
 }

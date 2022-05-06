@@ -38,20 +38,23 @@ class UserVoter extends Voter
 
     protected function voteOnAttribute(string $attribute, $subject, TokenInterface $token): bool
     {
-        // ROLE_ADMIN can do anything
-        if ($this->security->isGranted('ROLE_ADMIN')) {
-            return true;
-        }
-
         $user = $token->getUser();
+
+        // only ROLE_ADMIN can continue
+        if (!$this->security->isGranted('ROLE_ADMIN')) {
+            return false;
+        }
 
         if (!$user instanceof User) {
             // the user must be logged in; if not, deny access
             return false;
         }
 
-        if ($attribute == self::DELETE) {
-            return $user !== $subject;
+        switch ($attribute) {
+            case self::EDIT:
+                return true;
+            case self::DELETE:
+                return $user !== $subject;
         }
 
         throw new LogicException('This code should not be reached!');
