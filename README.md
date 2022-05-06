@@ -34,7 +34,7 @@ php bin/console doctrine:fixtures:load
   
 &nbsp; | Email | Password
 --- | --- | ---
-Admin | `admin@admin.  com` | `admin`  
+Admin | `admin@admin.<br>com` | `admin`  
 User | `user@user.com` | `user`  
 
 ## Contributing
