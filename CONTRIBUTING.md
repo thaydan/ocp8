@@ -54,7 +54,7 @@ More information : [Configuring Symfony](https://symfony.com/doc/current/configu
 ### Source files (/src)
 
 Contains the whole files of the program.
-
+    
 --- | --- 
 **Controller** | contains the routing files and the actions of the program (CHECKER DOC SYMFONY)<br>See [Controller](https://symfony.com/doc/current/controller.html).
 **DataFixtures** | contains a file to generate a set of fake data<br>See [DoctrineFixturesBundle](https://symfony.com/bundles/DoctrineFixturesBundle/current/index.html).
