@@ -59,16 +59,11 @@ Folder | Details
 --- | --- 
 src/Controller | Contains the routing files and the actions of the program (CHECKER DOC SYMFONY)<br>See [Controller](https://symfony.com/doc/current/controller.html).
 src/DataFixtures | Contains a file to generate a set of fake data<br>See [DoctrineFixturesBundle](https://symfony.com/bundles/DoctrineFixturesBundle/current/index.html).
-src/Entity | contains (l'ensemble des donénes persistées en base de données) (in this case the Task and User objects)  
-See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html).
-src/Form | contains (IDEM ENTITY) the Task and User forms.  
-See [Forms](https://symfony.com/doc/current/forms.html), [Form Types](https://symfony.com/doc/current/reference/forms/types.html).
-src/Repository | contains (IDEM ENTITY) the Task and User repositories.  
-See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html).
-src/Security | contains the security files (Authenticator, TaskVoter, AccessDeniedHandler).  
-See [Security](https://symfony.com/doc/current/security.html).
+src/Entity | contains (l'ensemble des donénes persistées en base de données) (in this case the Task and User objects)<br>See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html).
+src/Form | contains (IDEM ENTITY) the Task and User forms.<br>See [Forms](https://symfony.com/doc/current/forms.html), [Form Types](https://symfony.com/doc/current/reference/forms/types.html).
+src/Repository | contains (IDEM ENTITY) the Task and User repositories.<br>See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html).
+src/Security | contains the security files (Authenticator, TaskVoter, AccessDeniedHandler).<br>See [Security](https://symfony.com/doc/current/security.html).
 (LIEN AUTHENTIFICATION)
-src/Service | contains a service to customise the return to the previous page. It is used in few cases.  
 
 
 ### Template files
