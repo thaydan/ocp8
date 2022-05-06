@@ -61,8 +61,8 @@ Contains the whole files of the program.
 | src/DataFixtures | Contains a file to generate a set of fake data<br>See [DoctrineFixturesBundle](https://symfony.com/bundles/DoctrineFixturesBundle/current/index.html).                                           |
 | src/Entity       | Contains all data persisted in the database (currently the Task and User objects)<br>See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html). |
 | src/Form         | Contains all the forms (currently the Task and User forms).<br>See [Forms](https://symfony.com/doc/current/forms.html), [Form Types](https://symfony.com/doc/current/reference/forms/types.html).            |
-| src/Repository   | Contains all the tasks (currently the Task and User repositories.<br>See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html).                                                   |
-| src/Security     | Contains the security files (Authenticator, TaskVoter, AccessDeniedHandler).<br>See [Security](https://symfony.com/doc/current/security.html).(LIEN AUTHENTIFICATION)                            |
+| src/Repository   | Contains all the repositories (currently the Task and User repositories).<br>See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html).                                                   |
+| src/Security     | Contains the security files (Authenticator, TaskVoter, AccessDeniedHandler).<br>See [Security](https://symfony.com/doc/current/security.html) and [Custom Authenticator](https://symfony.com/doc/current/security/custom_authenticator.html)                        |
 
 ### Template files (templates)
 It is in this folder that all page templates are stored.  
