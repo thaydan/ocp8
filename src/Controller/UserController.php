@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\UserType;
-use App\Service\Referer;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -82,15 +81,15 @@ class UserController extends AbstractController
     }
 
     #[Route(path: '/{id}/delete', name: 'user_delete')]
-    public function deleteUser(User $user, Referer $referer): Response
+    public function deleteUser(User $user): Response
     {
-        $this->denyAccessUnlessGranted('edit', $user);
+        $this->denyAccessUnlessGranted('delete', $user);
 
         $this->manager->remove($user);
         $this->manager->flush();
 
         $this->addFlash('success', "L'utilisateur a bien été supprimé.");
 
-        return $referer->setAndGo();
+        return $this->redirectToRoute('user_list');
     }
 }

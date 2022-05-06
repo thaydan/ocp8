@@ -45,7 +45,7 @@ class Task
     /**
      * @ORM\ManyToOne(targetEntity=User::class, inversedBy="tasks")
      */
-    private User $user;
+    private $user;
 
     public function __construct()
     {
