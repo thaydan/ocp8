@@ -64,9 +64,8 @@ Contains the whole files of the program.
 | src/Security     | contains the security files (Authenticator, TaskVoter, AccessDeniedHandler).<br>See [Security](https://symfony.com/doc/current/security.html).(LIEN AUTHENTIFICATION)                            |
 
 ### Template files (templates)
-ensemble des templates
-twig
-
+It is in this folder that all page templates are stored.  
+The template engine used is Twig. The page templates are therefore in .twig format.
 
 See [Twig documentation](https://twig.symfony.com/doc/3.x/).
 
