@@ -2,10 +2,11 @@
 
 Welcome to this guide for conbributing.  
 
-To contribute, you need to keep in mind the follow points :
-
-
-(LA DETTE THECNIQUE DOIT ETRE REFLECHIS / QUALITE DU CODE)  
+Before to contribute, you need to keep in mind the follow points :
+- Use PSR-12 standard
+- Keep a code with low duplication
+- Use Codacy to help you to grow the code quality
+- The technical debt must be the lower
 
 #### Table of content
 
