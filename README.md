@@ -2,7 +2,7 @@
 
 # ocp8
 
-ToDo & Co is an application to manage your daily tasks.[Try the demo](https://ocp8.rominfo.fr)  
+ToDo & Co is an application to manage your daily tasks. [Try the demo](https://ocp8.rominfo.fr).  
 The credentials are the same as those included in the fixtures.
 
 ## Requierements
