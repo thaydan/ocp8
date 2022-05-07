@@ -83,6 +83,6 @@ See [Symfony Testing](https://symfony.com/doc/current/testing.html) and [PHPUnit
 
 Voici une liste de documents utiles :
 
-- [Technical documentation]()
-- [Quality and performance audit]()
-- [Symfony Documentation]()
+- [Technical documentation](/doc/technical-documentation.pdf)
+- [Quality and performance audit](/doc/quality-and-performance-audit.pdf)
+- [Symfony Documentation](https://symfony.com/doc/current/index.html)
