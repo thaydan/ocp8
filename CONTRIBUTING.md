@@ -18,7 +18,7 @@ Before to contribute, you need to keep in mind the follow points :
 
 For a better version management, it is recommended to 
 
-1. Create issues for each modification to be made
+1. Create issues for each modification that must be made
 2. Create a branch corresponding to the issue you want to process
 3. Make a pull request from the branch to master to publish the changes
 
@@ -42,13 +42,13 @@ This is the project architecture. Just below, you can find the details of each f
     └── README.md
 
 ### Configuration files (config)
-You can configure the behavior of the application and the libraries with these files. These files use YAML language.
+You can configure the behavior of the application and the libraries with these files. These files use the YAML language.
 
-More information : [Configuring Symfony](https://symfony.com/doc/current/configuration.html)
+See [Configuring Symfony](https://symfony.com/doc/current/configuration.html).
 
 ### Public files (public)
 
-(ROOT SERVER) to be linked to this folder. This is the only folder should be the only one to be publicly accessible. It contains CSS, Javascript and media files.
+This is the folder to which the root server should be linked. This is the only folder that must be publicly accessible. It contains CSS, Javascript and media files.
 
 ### Source files (src)
 
@@ -56,27 +56,31 @@ Contains the whole files of the program.
 
 | Folder           | Details                                                                                                                                                                                          |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| src/Controller   | Contains the routing files and the actions of the program (CHECKER DOC SYMFONY)<br>See [Controller](https://symfony.com/doc/current/controller.html).                                            |
+| src/Controller   | Contains the routing files and the actions of the program<br>See [Controller](https://symfony.com/doc/current/controller.html).                                            |
 | src/DataFixtures | Contains a file to generate a set of fake data<br>See [DoctrineFixturesBundle](https://symfony.com/bundles/DoctrineFixturesBundle/current/index.html).                                           |
-| src/Entity       | contains (l'ensemble des donénes persistées en base de données) (in this case the Task and User objects)<br>See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html). |
-| src/Form         | contains (IDEM ENTITY) the Task and User forms.<br>See [Forms](https://symfony.com/doc/current/forms.html), [Form Types](https://symfony.com/doc/current/reference/forms/types.html).            |
-| src/Repository   | contains (IDEM ENTITY) the Task and User repositories.<br>See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html).                                                   |
-| src/Security     | contains the security files (Authenticator, TaskVoter, AccessDeniedHandler).<br>See [Security](https://symfony.com/doc/current/security.html).(LIEN AUTHENTIFICATION)                            |
+| src/Entity       | Contains all data persisted in the database (currently the Task and User objects)<br>See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html). |
+| src/Form         | Contains all the forms (currently the Task and User forms).<br>See [Forms](https://symfony.com/doc/current/forms.html), [Form Types](https://symfony.com/doc/current/reference/forms/types.html).            |
+| src/Repository   | Contains all the repositories (currently the Task and User repositories).<br>See [Databases and the Doctrine ORM](https://symfony.com/doc/current/doctrine.html).                                                   |
+| src/Security     | Contains the security files (Authenticator, TaskVoter, AccessDeniedHandler).<br>See [Security](https://symfony.com/doc/current/security.html) and [Custom Authenticator](https://symfony.com/doc/current/security/custom_authenticator.html).                        |
 
 ### Template files (templates)
-ensemble des templates
-twig
-
+It is in this folder that all page templates are stored.  
+The template engine used is Twig. The page templates are therefore in .twig format.
 
 See [Twig documentation](https://twig.symfony.com/doc/3.x/).
 
 ### Automated tests (tests)
-ensemble des tests
-more than 70% 
-phpunit
 
-(METTRE TOUS LES PREREQUIS DE LA CONSIGNE)
+It contains all the unit and functional tests.  
+
+To maintain code quality, it is important to set up unit and functional tests, and to maintain a test coverage of over 70%.  
+
+To run tests, you need to use PHPUnit.
+
+See [Symfony Testing](https://symfony.com/doc/current/testing.html) and [PHPUnit documentation](https://phpunit.readthedocs.io/en/stable/index.html).
 
 ## <a name="more"></a>More documentation
 
-symfony 
+liens symfony 
+
+liens vers doc pdf
