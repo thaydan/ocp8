@@ -7,7 +7,6 @@ Before to contribute, you need to keep in mind the follow points :
 - Keep a code with low duplication
 - Use Codacy to help you grow the code quality
 - The technical debt must be the low as possible
-- Keep 
 
 #### Table of content
 
