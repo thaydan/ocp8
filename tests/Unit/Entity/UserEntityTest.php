@@ -4,6 +4,7 @@ namespace App\Tests\Unit\Entity;
 
 use App\Entity\User;
 use App\Tests\Unit\AbstractKernelTestCase;
+use Exception;
 
 class UserEntityTest extends AbstractKernelTestCase
 {

@@ -4,6 +4,7 @@ namespace App\Tests\Functional\Controller;
 
 use App\Repository\UserRepository;
 use App\Tests\Functional\AbstractWebTestCase;
+use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 use Symfony\Component\Security\Core\Security;
 
 class SecurityControllerTest extends AbstractWebTestCase
@@ -13,6 +14,7 @@ class SecurityControllerTest extends AbstractWebTestCase
         parent::setUp();
         $this->security = static::getContainer()->get(Security::class);
         $this->userRepo = static::getContainer()->get(UserRepository::class);
+        $this->token = static::getContainer()->get(TokenStorageInterface::class);
     }
 
     public function testLoginPage(): void
@@ -31,10 +33,11 @@ class SecurityControllerTest extends AbstractWebTestCase
         $form = $crawler->selectButton('Se connecter')->form();
         $form['email']->setValue('user@user.com');
         $form['password']->setValue('user');
-        $this->client->submit($form);
+        $crawler = $this->client->submit($form);
 
-        $user = $this->client->getRequest()->getUser();
+        $crawler = $this->client->request('GET', '/');
 
-        $this->assertNotEquals('user@user.com', $user->getEmail());
+        $this->assertResponseIsSuccessful();
+        $this->assertSelectorTextContains('h1', 'Bienvenue sur Todo List');
     }
 }

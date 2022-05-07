@@ -23,7 +23,7 @@ abstract class AbstractWebTestCase extends WebTestCase
         return $user;
     }
 
-    protected function testEntityList(?string $loginAs, $routeName, bool $expected = true): void
+    protected function testPageAccess(?string $loginAs, $routeName, bool $expected = true): void
     {
         if ($loginAs) {
             $this->loginAs($loginAs);

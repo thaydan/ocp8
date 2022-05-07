@@ -8,10 +8,6 @@ use Symfony\Component\Form\FormFactoryInterface;
 
 class UserControllerTest extends AbstractWebTestCase
 {
-    const PAGES = [
-        '/users',
-        '/users/create'
-    ];
 
     protected function setUp(): void
     {
@@ -23,60 +19,63 @@ class UserControllerTest extends AbstractWebTestCase
 
     public function testUserList(): void
     {
-        $this->testEntityList('admin@admin.com', 'user_list');
+        $this->testPageAccess('admin@admin.com', 'user_list');
     }
 
-
-    public function testCreateAdminUser()
+    public function testUserCreateAndDelete()
     {
         $this->loginAs('admin@admin.com');
         $this->client->followRedirects();
 
         $crawler = $this->client->request('GET', '/users/create');
-
         $this->assertEquals(200, $this->client->getResponse()->getStatusCode());
 
         $username = 'Joe';
 
         $form = $crawler->selectButton('Ajouter')->form();
         $form['user[username]']->setValue($username);
-        //dd($form['user[roles]']);
         $form['user[password][first]']->setValue('test');
         $form['user[password][second]']->setValue('test');
         $form['user[email]']->setValue('test@test.com');
         $this->client->submit($form);
 
+        // check creation
         $user = $this->userRepository->findOneBy(['username' => $username]);
-
         $this->assertEquals(true, (bool)$user);
+        $userId = $user->getId();
+
+        // delete user
+        $this->client->request('GET', "/users/" . $userId . "/delete");
+
+        // check deletion
+        $user = $this->userRepository->findOneBy(['id' => $userId]);
+        $this->assertEquals(false, (bool)$user);
     }
 
-    public function testAsAdmin()
+    public function testEditUser()
     {
-        $this->loginAs('admin@admin.com');
+        $user = $this->loginAs('admin@admin.com');
 
-        foreach (self::PAGES as $page) {
-            $this->testPage($page);
-        }
-    }
+        $testedUser = $this->userRepository->findOneBy(['email' => 'user@user.com']);
 
-    public function testAsUser()
-    {
-        $this->loginAs('user@user.com');
+        $crawler = $this->client->request('GET', "/users/" . $testedUser->getId() . "/edit");
 
-        foreach (self::PAGES as $page) {
-            $this->testPage($page, false);
-        }
-    }
+        $this->assertEquals(200, $this->client->getResponse()->getStatusCode());
 
-    protected function testPage(string $page, bool $expected = true)
-    {
-        $this->client->request('GET', $page);
-        if ($expected) {
-            $this->assertResponseIsSuccessful();
-        } else {
-            $this->assertNotEquals(200, $this->client->getResponse()->getStatusCode());
-        }
+        $newUsername = 'New username';
+        $newEmail = 'newemail@test.com';
+
+        $form = $crawler->selectButton('Modifier')->form();
+        $form['user[username]']->setValue($newUsername);
+        $form['user[password][first]']->setValue('test');
+        $form['user[password][second]']->setValue('test');
+        $form['user[email]']->setValue($newEmail);
+        $this->client->submit($form);
+
+        $editedUser = $this->userRepository->findOneBy(['id' => $user->getId()]);
+
+        $this->assertNotEquals($newUsername, $editedUser->getUsername());
+        $this->assertNotEquals($newEmail, $editedUser->getEmail());
     }
 
 

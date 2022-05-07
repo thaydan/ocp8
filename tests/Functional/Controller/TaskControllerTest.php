@@ -13,24 +13,13 @@ class TaskControllerTest extends AbstractWebTestCase
         $this->taskRepository = static::getContainer()->get(TaskRepository::class);
     }
 
-    public function testTaskList(): void
+    public function testTaskLists(): void
     {
-        $this->testEntityList('user@user.com', 'task_list');
+        $this->testPageAccess('user@user.com', 'task_list');
+        $this->testPageAccess('user@user.com', 'task_list_done');
     }
 
-//    public function testTaskList(): void
-//    {
-//        $this->loginAs('user@user.com');
-//        $crawler = $this->client->request('GET', '/tasks');
-//
-//        $this->assertEquals(200, $this->client->getResponse()->getStatusCode());
-//        //$this->assertStringContainsString('Welcome to Symfony', $crawler->filter('#container h1')->text());
-//
-//        $this->assertResponseIsSuccessful();
-//        //$this->assertSelectorTextContains('h1', 'Hello World');
-//    }
-
-    public function testCreateTaskAndVerifyUserAndDelete()
+    public function testTaskCreateAndVerifyUserAndDelete()
     {
         $user = $this->loginAs('user@user.com');
 
