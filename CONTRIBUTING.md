@@ -81,7 +81,7 @@ See [Symfony Testing](https://symfony.com/doc/current/testing.html) and [PHPUnit
 
 ## <a name="more"></a>More documentation
 
-Voici une liste de documents utiles :
+Here is a list of useful documents:
 
 - [Technical documentation](/doc/technical-documentation.pdf)
 - [Quality and performance audit](/doc/quality-and-performance-audit.pdf)
