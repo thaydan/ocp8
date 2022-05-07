@@ -4,6 +4,12 @@
 
 ToDo & Co is an application to manage your daily tasks.
 
+## Demo
+
+[Try the demo](https://ocp8.rominfo.fr)  
+
+The credentials are the same as those included in the fixtures.
+
 ## Requierements
 - PHP 8.0.17
 - MariaDB 10.5.15
