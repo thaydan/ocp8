@@ -78,7 +78,7 @@ To maintain code quality, it is important to set up unit and functional tests, a
 
 To run tests, you need to use PHPUnit.
 
-See [Symfony Testing](https://symfony.com/doc/current/testing.html) and [PHPUnit Documentation](https://phpunit.readthedocs.io/en/stable/index.html).
+See [Symfony Testing](https://symfony.com/doc/current/testing.html) and [PHPUnit documentation](https://phpunit.readthedocs.io/en/stable/index.html).
 
 ## <a name="more"></a>More documentation
 
