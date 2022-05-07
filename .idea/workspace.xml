@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c49c9d40-904e-4ce3-beab-753e0b3b5004" name="Changes" comment="enhancement">
-      <change afterPath="$PROJECT_DIR$/doc/quality-and-performance-audit.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -194,8 +192,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception" />
       <recent name="$PROJECT_DIR$/doc" />
+      <recent name="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception" />
       <recent name="$PROJECT_DIR$/src/Security" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/tests" />
@@ -252,7 +250,7 @@
       <workItem from="1651755969167" duration="13151000" />
       <workItem from="1651779657648" duration="3535000" />
       <workItem from="1651825321107" duration="10829000" />
-      <workItem from="1651912954153" duration="1919000" />
+      <workItem from="1651912954153" duration="3171000" />
     </task>
     <task id="LOCAL-00001" summary="issue-6">
       <created>1649239128202</created>
@@ -520,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651913121518</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="enhancement">
+      <created>1651920875195</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1651920875195</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
