@@ -39,7 +39,7 @@ class TaskControllerTest extends AbstractWebTestCase
         $task = $this->taskRepository->findOneBy(['title' => $title]);
         $this->assertEquals($user->getId(), $task->getUser()->getId());
 
-        $crawler = $this->client->request('GET', "/tasks/" . $task->getId() . "/delete");
+        $this->client->request('GET', "/tasks/" . $task->getId() . "/delete");
 
         $task = $this->taskRepository->findOneBy(['title' => $title]);
         $this->assertEquals(false, (bool)$task);
@@ -52,7 +52,6 @@ class TaskControllerTest extends AbstractWebTestCase
         $task = $this->taskRepository->findOneBy(['user' => $user]);
 
         $crawler = $this->client->request('GET', "/tasks/" . $task->getId() . "/edit");
-
         $this->assertEquals(200, $this->client->getResponse()->getStatusCode());
 
         $add = ' (edited)';
@@ -67,18 +66,17 @@ class TaskControllerTest extends AbstractWebTestCase
         $this->assertNotEquals($task, $editedTask);
     }
 
-//    public function testToggleTask()
-//    {
-//        $user = $this->loginAs('user@user.com');
-//
-//        $task = $this->taskRepository->findOneBy(['isDone' => false]);
-//        $this->assertEquals(true, (bool)$task);
-//
-//        $crawler = $this->client->request('GET', "/tasks/" . $task->getId() . "/toggle");
-//        $this->assertEquals(200, $this->client->getResponse()->getStatusCode());
-//
-//        $editedTask = $this->taskRepository->findOneBy(['id' => $task->getId()]);
-//        $this->assertEquals(true, $editedTask->isDone());
-//    }
+    public function testToggleTask()
+    {
+        $this->loginAs('admin@admin.com');
+
+        $task = $this->taskRepository->findOneBy(['isDone' => false]);
+        $this->assertEquals(true, (bool)$task);
+
+        $this->client->request('GET', "/tasks/" . $task->getId() . "/toggle");
+
+        $editedTask = $this->taskRepository->findOneBy(['id' => $task->getId()]);
+        $this->assertEquals(true, $editedTask->isDone());
+    }
 
 }

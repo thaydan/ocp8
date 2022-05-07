@@ -23,7 +23,7 @@ class SecurityControllerTest extends AbstractWebTestCase
         $this->assertResponseIsSuccessful();
     }
 
-    public function testLogin()
+    public function testLoginForm()
     {
         $this->client->followRedirects();
         $crawler = $this->client->request('GET', "/login");

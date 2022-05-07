@@ -20,7 +20,6 @@ class DefaultControllerTest extends AbstractWebTestCase
     protected function testIndex(int $expectedCode)
     {
         $this->client->request('GET', '/');
-
         $this->assertEquals($expectedCode, $this->client->getResponse()->getStatusCode());
     }
 }
