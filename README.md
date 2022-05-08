@@ -39,7 +39,7 @@ php bin/console doctrine:fixtures:load
 Admin | `admin@admin.com` | `admin`  
 User | `user@user.com` | `user`  
 
-## Run the app with local Symfony server
+## Run the application on your computer
 
 You can use the local Symfony server to run the application on your computer. This requires installing [Symfony CLI](https://symfony.com/download).
 
