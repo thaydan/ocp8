@@ -47,7 +47,7 @@ Then, in the folder containing the project, you can start a server with the foll
 ```bash
   symfony serve
 ```
-See [Symfony Local Web Server](https://symfony.com/doc/current/setup/symfony_server.html)
+See [Symfony Local Web Server](https://symfony.com/doc/current/setup/symfony_server.html).
 
 ## Contributing
 To contribute to the project, see the [contributing documentation](/CONTRIBUTING.md).
