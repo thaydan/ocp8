@@ -13,7 +13,8 @@ The credentials are the same as those included in the fixtures.
 
 1. Copy the repository  
 2. Complete the .env file (you need to set the database URL)
-3. Install dependencies  
+3. Go to the folder containing the project
+4. Install dependencies  
 ```bash
   composer install
 ```
@@ -37,6 +38,18 @@ php bin/console doctrine:fixtures:load
 --- | --- | ---
 Admin | `admin@admin.com` | `admin`  
 User | `user@user.com` | `user`  
+
+## Run the app with local Symfony server
+
+You can use the local Symfony server to run the application.
+
+This requires installing [Symfony CLI](https://symfony.com/download) on your computer.
+
+Then, in the folder containing the project, you can start a server with the following command
+  
+  symfony serve
+
+See [Symfony Local Web Server](https://symfony.com/doc/current/setup/symfony_server.html)
 
 ## Contributing
 To contribute to the project, see the [contributing documentation](/CONTRIBUTING.md).
