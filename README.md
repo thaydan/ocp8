@@ -41,7 +41,7 @@ User | `user@user.com` | `user`
 
 ## Run the app with local Symfony server
 
-You can use the local Symfony server to run the application. This requires installing [Symfony CLI](https://symfony.com/download) on your computer.
+You can use the local Symfony server to run the application on your computer. This requires installing [Symfony CLI](https://symfony.com/download) on your computer.
 
 Then, in the folder containing the project, you can start a server with the following command
 ```bash
