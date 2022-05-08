@@ -18,15 +18,15 @@ The credentials are the same as those included in the fixtures.
 ```bash
   composer install
 ```
-4. Create database
+5. Create database
 ```bash
   php bin/console doctrine:database:create
 ```
-5. Update database schema
+6. Update database schema
 ```bash
   php bin/console doctrine:database:update --force
 ```
-6. Load the fixtures to install the demo data
+7. Load the fixtures to install the demo data
 
 ```bash
 php bin/console doctrine:fixtures:load
