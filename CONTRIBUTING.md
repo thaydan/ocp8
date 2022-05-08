@@ -22,7 +22,7 @@ For a better version management, it is recommended to
 2. Create a branch corresponding to the issue you want to process
 3. Make a pull request from the branch to master to publish the changes
 
-More about proposing changes with pull requests : [Documentation Github](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests)
+More about proposing changes with pull requests : [Documentation Github](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests).
 
 ## <a name="architecture"></a>Project Architecture
 This is the project architecture. Just below, you can find the details of each folder.
