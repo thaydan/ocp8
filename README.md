@@ -51,3 +51,7 @@ See [Symfony Local Web Server](https://symfony.com/doc/current/setup/symfony_ser
 
 ## Contributing
 To contribute to the project, see the [contributing documentation](/CONTRIBUTING.md).
+
+More documentation :
+- [Technical documentation](/doc/technical-documentation.pdf)
+- [Quality and performance audit](/doc/quality-and-performance-audit.pdf)
