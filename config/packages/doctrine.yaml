@@ -1,12 +1,13 @@
 doctrine:
     dbal:
-        # demo dynamic database connection
+        # demo dynamic database connection START
         host: '%env(DATABASE_HOST)%'
         port: '%env(DATABASE_PORT)%'
 #        dbname: '%env(DATABASE_NAME)%'
         user: '%env(DATABASE_USER)%'
         password: '%env(DATABASE_PASSWORD)%'
-        # demo dynamic database connection
+        # demo dynamic database connection END
+
 #        url: '%env(resolve:DATABASE_URL)%'
 
         # IMPORTANT: You MUST configure your server version,

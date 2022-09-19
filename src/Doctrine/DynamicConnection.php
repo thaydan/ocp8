@@ -5,7 +5,7 @@ namespace App\Doctrine;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver;
 use Doctrine\DBAL\Exception;
-use Symfony\Bundle\FrameworkBundle\Console\Application;
+use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Input\ArrayInput;
 
 class DynamicConnection extends Connection
@@ -17,6 +17,7 @@ class DynamicConnection extends Connection
 
     /**
      * @throws Exception
+     * @throws \Exception
      */
     public function loadUserDatabase(string $host, string $port, string $user, string $password, string $dbName)
     {
@@ -36,22 +37,24 @@ class DynamicConnection extends Connection
             $this->_eventManager
         );
 
-        $application = new Application($this->get('kernel'));
+
+        $application = new Application();
         $application->setAutoExit(false);
 
-        // Make sure we close the original connection because it lost the reference to the database
-        $this->getDoctrine()->getManager()->getConnection()->close();
+//        // Make sure we close the original connection because it lost the reference to the database
+//        $this->close();
 
         // Create new database
-        $options = array('command' => 'doctrine:database:create');
+        $options = ['command' => 'doctrine:database:create'];
         $application->run(new ArrayInput($options));
 
         // Update schema
-        $options = array('command' => 'doctrine:schema:update','--force' => true);
+        $options = ['command' => 'doctrine:schema:update','--force' => true];
         $application->run(new ArrayInput($options));
 
         // Loading Fixtures, --append option prevent confirmation message
-        $options = array('command' => 'doctrine:fixtures:load','--append' => true);
+        $options = ['command' => 'doctrine:fixtures:load','--append' => true];
         $application->run(new ArrayInput($options));
+
     }
 }
